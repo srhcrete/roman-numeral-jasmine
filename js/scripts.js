@@ -17,26 +17,26 @@ function toRoman(arr) {
   var result = '';
   if (arr.length === 4) {
     result += matrix[0] [arr[0]-1];
-    if (arr[1] != '0') {
+    if (arr[1] != 0) {
       result += matrix[1] [arr[1]-1];
     }
-    if (arr[2] != '0') {
+    if (arr[2] != 0) {
       result += matrix[2] [arr[2]-1];
     }
-    if (arr[3] != '0') {
+    if (arr[3] != 0) {
       result += matrix[3] [arr[3]-1];
     }
   } else if (arr.length === 3) {
     result += matrix[1] [arr[0]-1];
-    if (arr[1] != '0') {
+    if (arr[1] != 0) {
       result += matrix[2] [arr[1]-1];
     }
-    if (arr[2] != '0') {
+    if (arr[2] != 0) {
       result += matrix[3] [arr[2]-1];
     }
   } else if (arr.length === 2) {
     result += matrix[2] [arr[0]-1];
-    if (arr[1] != '0') {
+    if (arr[1] != 0) {
       result += matrix[3] [arr[1]-1];
     }
   } else if (arr.length === 1) {
